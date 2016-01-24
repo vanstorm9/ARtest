@@ -41,7 +41,7 @@ public class forTracker2 : MonoBehaviour, ITrackableEventHandler {
 		    newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
 		{
 			// Play audio when target is found
-		//	Debug.Log("Play Sound");
+			//Debug.Log("Play Sound");
 			mShowGUIButton  = true;
 			//defenseButton = true;
 			//audio.Play();
@@ -57,7 +57,9 @@ public class forTracker2 : MonoBehaviour, ITrackableEventHandler {
 	}  
 
 	void OnGUI() {
-		if (mShowGUIButton) {
+        Debug.Log("Button should appear");
+        Debug.Log(mShowGUIButton);
+        if (mShowGUIButton) {
 			// draw the GUI button
 			if (GUI.Button(attackButton2, "ATK/300")) {
 				Debug.Log ("Attack!");
