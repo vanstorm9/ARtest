@@ -57,8 +57,6 @@ public class forTracker2 : MonoBehaviour, ITrackableEventHandler {
 	}  
 
 	void OnGUI() {
-        Debug.Log("Button should appear");
-        Debug.Log(mShowGUIButton);
         if (mShowGUIButton) {
 			// draw the GUI button
 			if (GUI.Button(attackButton2, "ATK/300")) {
