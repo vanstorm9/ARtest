@@ -74,6 +74,9 @@ namespace Vuforia
             // Enable rendering:
             foreach (Renderer component in rendererComponents)
             {
+                // A print statement here prints out multiple times as long as card is in view
+
+                //Debug.Log(mTrackableBehaviour.TrackableName + " is on the field");
                 component.enabled = true;
             }
 
